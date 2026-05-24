@@ -2,8 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Clock, ArrowRight } from "lucide-react";
-import { buttonVariants } from "@/components/ui/button";
+import { Clock } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ScrollReveal, StaggerReveal, StaggerItem } from "@/components/effects/ScrollReveal";
