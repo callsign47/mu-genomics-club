@@ -32,7 +32,7 @@ export default function BlogPage() {
         {featuredPost && (
           <ScrollReveal>
             <Link href={`/blog/${featuredPost.id}`} className="block mb-16 group">
-              <Card className="bg-card/50 border-border overflow-hidden glow-border card-hover">
+              <Card className="glass-card overflow-hidden border-none">
                 <div className="grid md:grid-cols-2">
                   <div className="relative h-64 md:h-full min-h-[300px] img-zoom">
                     <Image src={featuredPost.img} alt={featuredPost.title} fill className="object-cover" />
@@ -60,7 +60,7 @@ export default function BlogPage() {
           {otherPosts.map((post) => (
             <StaggerItem key={post.id}>
               <Link href={`/blog/${post.id}`} className="group">
-                <Card className="h-full bg-background border-border overflow-hidden card-hover glow-border flex flex-col">
+                <Card className="glass-card h-full overflow-hidden flex flex-col border-none">
                   <div className="relative h-48 img-zoom">
                     <Image src={post.img} alt={post.title} fill className="object-cover" />
                     <div className="absolute top-4 left-4"><Badge variant="secondary" className="bg-background/80 backdrop-blur-md text-foreground">{post.category}</Badge></div>

@@ -8,16 +8,17 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground [a]:hover:bg-primary/80",
+        default:
+          "bg-primary/20 text-primary border border-primary/35 backdrop-blur-md shadow-[0_0_12px_rgba(0,229,160,0.1)] hover:bg-primary/30 hover:text-primary hover:border-primary/60 hover:shadow-[0_0_20px_rgba(0,229,160,0.25)] hover:-translate-y-[2px] active:translate-y-px duration-200",
         outline:
-          "border-border bg-background hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:border-input dark:bg-input/30 dark:hover:bg-input/50",
+          "border-border bg-card/20 backdrop-blur-sm hover:bg-muted/50 hover:text-foreground hover:-translate-y-[2px] active:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground dark:border-input dark:bg-input/20 dark:hover:bg-input/40 duration-200",
         secondary:
-          "bg-secondary text-secondary-foreground hover:bg-secondary/80 aria-expanded:bg-secondary aria-expanded:text-secondary-foreground",
+          "bg-secondary/20 text-secondary border border-secondary/35 backdrop-blur-md shadow-[0_0_12px_rgba(0,150,255,0.1)] hover:bg-secondary/30 hover:text-secondary hover:border-secondary/60 hover:shadow-[0_0_20px_rgba(0,150,255,0.25)] hover:-translate-y-[2px] active:translate-y-px duration-200",
         ghost:
-          "hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50",
+          "hover:bg-muted hover:text-foreground hover:-translate-y-[1px] active:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/30 duration-200",
         destructive:
-          "bg-destructive/10 text-destructive hover:bg-destructive/20 focus-visible:border-destructive/40 focus-visible:ring-destructive/20 dark:bg-destructive/20 dark:hover:bg-destructive/30 dark:focus-visible:ring-destructive/40",
-        link: "text-primary underline-offset-4 hover:underline",
+          "bg-destructive/15 text-destructive border border-destructive/30 backdrop-blur-md hover:bg-destructive/25 hover:border-destructive/50 hover:shadow-[0_0_15px_rgba(255,0,0,0.1)] hover:-translate-y-[2px] active:translate-y-px duration-200",
+        link: "text-primary underline-offset-4 hover:underline hover:text-primary/80 duration-200",
       },
       size: {
         default:

@@ -230,7 +230,7 @@ export default function HomePage() {
           <StaggerReveal className="grid md:grid-cols-3 gap-6" staggerDelay={0.15}>
             {EVENTS.map((event) => (
               <StaggerItem key={event.id}>
-                <Card className="bg-background border-border overflow-hidden flex flex-col card-hover glow-border">
+                <Card className="glass-card overflow-hidden flex flex-col border-none">
                   <div className="relative h-48 img-zoom">
                     <Image src={event.img} alt={event.title} fill className="object-cover" />
                     <div className="absolute top-4 left-4">

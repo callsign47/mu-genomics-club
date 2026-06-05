@@ -28,7 +28,7 @@ export default function JoinPage() {
 
         <div className="grid lg:grid-cols-2 gap-12">
           <ScrollReveal direction="left">
-            <Card className="bg-background border-primary/20 shadow-glow h-full">
+            <Card className="glass-strong border-primary/25 shadow-glow h-full">
               <CardHeader>
                 <CardTitle className="text-2xl">Official Registration</CardTitle>
                 <CardDescription className="text-base">Follow these 3 simple steps to officially become a member.</CardDescription>
@@ -50,7 +50,7 @@ export default function JoinPage() {
                   <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold shrink-0">3</div>
                   <div><h3 className="font-bold text-lg mb-1">Submit Membership Fee</h3><p className="text-muted-foreground">Pay the &#8377;100 annual membership fee in person at Cabin MA557, Dept. of Bioinformatics (Dr. Aditya Saxena).</p></div>
                 </div>
-                <div className="mt-8 p-4 rounded-lg bg-muted/50 border border-border">
+                <div className="mt-8 p-4 rounded-lg bg-primary/5 border border-primary/20 backdrop-blur-sm">
                   <h4 className="font-semibold mb-2">Membership Benefits:</h4>
                   <ul className="space-y-2 text-sm text-muted-foreground">
                     <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-primary mt-0.5" /> All workshops &amp; seminars</li>
@@ -64,7 +64,7 @@ export default function JoinPage() {
           </ScrollReveal>
 
           <ScrollReveal direction="right" delay={0.15}>
-            <Card className="bg-background border-border h-full">
+            <Card className="glass h-full">
               <CardHeader><CardTitle className="text-2xl">Express Interest</CardTitle><CardDescription className="text-base">Not ready to commit? Fill out this form and we will get in touch.</CardDescription></CardHeader>
               <CardContent>
                 {isSubmitted ? (

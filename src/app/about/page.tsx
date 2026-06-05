@@ -58,7 +58,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
             <ScrollReveal direction="left">
-              <Card className="bg-background border-primary/20 shadow-glow relative overflow-hidden h-full card-hover">
+              <Card className="glass-card border-primary/25 shadow-glow relative overflow-hidden h-full border-none">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-3xl -mr-10 -mt-10" />
                 <CardHeader>
                   <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-primary mb-4">
@@ -73,7 +73,7 @@ export default function AboutPage() {
             </ScrollReveal>
 
             <ScrollReveal direction="right" delay={0.15}>
-              <Card className="bg-background border-secondary/20 shadow-lg relative overflow-hidden h-full card-hover">
+              <Card className="glass-card border-secondary/25 shadow-lg relative overflow-hidden h-full border-none">
                 <div className="absolute bottom-0 right-0 w-32 h-32 bg-secondary/10 rounded-full blur-3xl -mr-10 -mb-10" />
                 <CardHeader>
                   <div className="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center text-secondary mb-4">
@@ -110,7 +110,7 @@ export default function AboutPage() {
               { icon: Dna, title: "Curiosity", desc: "Lifelong learning in genetics" },
             ].map((value, i) => (
               <StaggerItem key={i}>
-                <div className="text-center p-6 rounded-2xl bg-card/50 border border-border/50 glow-border card-hover">
+                <div className="text-center p-6 rounded-2xl glass-card border-none">
                   <div className="w-12 h-12 mx-auto rounded-full bg-primary/10 text-primary flex items-center justify-center mb-4">
                     <value.icon className="w-6 h-6" />
                   </div>
@@ -124,7 +124,7 @@ export default function AboutPage() {
       </section>
 
       {/* Genomics 101 */}
-      <section className="py-20 bg-primary text-primary-foreground">
+      <section className="py-20 glass-subtle border-t border-border/30 text-foreground">
         <div className="container mx-auto px-4">
           <ScrollReveal>
             <h2 className="text-3xl font-bold text-center mb-16">Genomics 101</h2>
@@ -136,11 +136,11 @@ export default function AboutPage() {
               { icon: Globe, title: "Global Potential", text: "Genomics can reduce global health inequalities by providing developing nations with efficient, cost-effective tools for preventing major diseases." },
             ].map((item, i) => (
               <StaggerItem key={i}>
-                <div className="bg-background/10 backdrop-blur-sm p-8 rounded-2xl border border-primary-foreground/20 card-hover">
+                <div className="glass-card p-8 rounded-2xl border-none">
                   <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
-                    <item.icon className="w-6 h-6" /> {item.title}
+                    <item.icon className="w-6 h-6 text-primary" /> {item.title}
                   </h3>
-                  <p className="text-primary-foreground/80 leading-relaxed">{item.text}</p>
+                  <p className="text-muted-foreground leading-relaxed">{item.text}</p>
                 </div>
               </StaggerItem>
             ))}

@@ -30,7 +30,7 @@ export default function ResearchPage() {
         <StaggerReveal className="grid md:grid-cols-2 gap-8" staggerDelay={0.15}>
           {PROJECTS.map((project) => (
             <StaggerItem key={project.id}>
-              <Card className="bg-card/50 border-border overflow-hidden flex flex-col group glow-border card-hover h-full">
+              <Card className="glass-card overflow-hidden flex flex-col group h-full border-none">
                 <div className="relative h-64 img-zoom">
                   <Image src={project.img} alt={project.title} fill className="object-cover" />
                   <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
@@ -60,7 +60,7 @@ export default function ResearchPage() {
         </StaggerReveal>
 
         <ScrollReveal>
-          <div className="mt-20 p-8 md:p-12 rounded-2xl bg-primary/10 border border-primary/20 text-center relative overflow-hidden">
+          <div className="mt-20 p-8 md:p-12 rounded-2xl glass border-primary/30 text-center relative overflow-hidden">
             <div className="absolute top-0 right-0 p-8 opacity-10"><Microscope className="w-32 h-32" /></div>
             <h2 className="text-3xl font-bold mb-4 relative z-10">Have a Research Idea?</h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto relative z-10">We provide mentorship, resources, and a collaborative environment for students who want to bring their biotech ideas to life.</p>

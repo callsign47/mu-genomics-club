@@ -50,7 +50,7 @@ export default function TeamPage() {
           <StaggerReveal className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {FACULTY.map((member, i) => (
               <StaggerItem key={i}>
-                <Card className="bg-card/50 border-border overflow-hidden group glow-border card-hover">
+                <Card className="glass-card group overflow-hidden border-none">
                   <CardContent className="p-0">
                     <div className="flex flex-col sm:flex-row">
                       <div className="relative w-full sm:w-1/3 h-48 sm:h-auto bg-primary/5 flex items-center justify-center p-6">
@@ -85,7 +85,7 @@ export default function TeamPage() {
           <StaggerReveal className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" staggerDelay={0.1}>
             {CORE_TEAM.map((member, i) => (
               <StaggerItem key={i}>
-                <Card className="bg-background border-border overflow-hidden text-center glow-border card-hover">
+                <Card className="glass-card overflow-hidden text-center border-none">
                   <CardHeader className="pt-8 pb-4">
                     <div className="mx-auto w-28 h-28 relative rounded-full overflow-hidden mb-4 border-4 border-background shadow-md bg-muted flex items-center justify-center">
                       {/* eslint-disable-next-line @next/next/no-img-element */}

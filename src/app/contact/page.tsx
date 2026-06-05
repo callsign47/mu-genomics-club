@@ -28,22 +28,22 @@ export default function ContactPage() {
 
         <div className="grid lg:grid-cols-3 gap-8">
           <ScrollReveal direction="left">
-            <Card className="bg-primary text-primary-foreground border-none h-full">
+            <Card className="glass-strong border-primary/20 h-full text-foreground">
               <CardContent className="p-8 space-y-8">
                 <div>
                   <h3 className="font-bold text-xl mb-6">Contact Information</h3>
                   <div className="space-y-6">
-                    <div className="flex items-start gap-4"><div className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center shrink-0"><Mail className="w-5 h-5" /></div><div><p className="text-sm text-primary-foreground/70 mb-1">Email Us</p><p className="font-medium break-all">aditya.saxena@marwadieducation.edu.in</p></div></div>
-                    <div className="flex items-start gap-4"><div className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center shrink-0"><Phone className="w-5 h-5" /></div><div><p className="text-sm text-primary-foreground/70 mb-1">Call Us</p><p className="font-medium">Ext. 1568</p></div></div>
-                    <div className="flex items-start gap-4"><div className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center shrink-0"><MapPin className="w-5 h-5" /></div><div><p className="text-sm text-primary-foreground/70 mb-1">Visit Us</p><p className="font-medium">Cabin MA557, Dept. of Bioinformatics</p><p className="text-sm text-primary-foreground/80 mt-1">Marwadi University, Rajkot, Gujarat.</p></div></div>
+                    <div className="flex items-start gap-4"><div className="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0"><Mail className="w-5 h-5" /></div><div><p className="text-sm text-muted-foreground mb-1">Email Us</p><p className="font-medium break-all">aditya.saxena@marwadieducation.edu.in</p></div></div>
+                    <div className="flex items-start gap-4"><div className="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0"><Phone className="w-5 h-5" /></div><div><p className="text-sm text-muted-foreground mb-1">Call Us</p><p className="font-medium">Ext. 1568</p></div></div>
+                    <div className="flex items-start gap-4"><div className="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0"><MapPin className="w-5 h-5" /></div><div><p className="text-sm text-muted-foreground mb-1">Visit Us</p><p className="font-medium">Cabin MA557, Dept. of Bioinformatics</p><p className="text-sm text-muted-foreground mt-1">Marwadi University, Rajkot, Gujarat.</p></div></div>
                   </div>
                 </div>
-                <div className="pt-8 border-t border-primary-foreground/20">
+                <div className="pt-8 border-t border-border/30">
                   <p className="font-medium mb-4">Follow us</p>
                   <div className="flex gap-4">
-                    <a href="#" className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"><FaInstagram className="w-5 h-5" /></a>
-                    <a href="#" className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"><FaLinkedin className="w-5 h-5" /></a>
-                    <a href="#" className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"><FaXTwitter className="w-5 h-5" /></a>
+                    <a href="#" className="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center hover:bg-primary/25 transition-colors"><FaInstagram className="w-5 h-5" /></a>
+                    <a href="#" className="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center hover:bg-primary/25 transition-colors"><FaLinkedin className="w-5 h-5" /></a>
+                    <a href="#" className="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center hover:bg-primary/25 transition-colors"><FaXTwitter className="w-5 h-5" /></a>
                   </div>
                 </div>
               </CardContent>
@@ -51,7 +51,7 @@ export default function ContactPage() {
           </ScrollReveal>
 
           <ScrollReveal direction="right" delay={0.15} className="lg:col-span-2">
-            <Card className="bg-background border-border h-full">
+            <Card className="glass h-full">
               <CardContent className="p-8">
                 <h3 className="font-bold text-2xl mb-6">Send us a Message</h3>
                 {isSubmitted ? (

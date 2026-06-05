@@ -61,7 +61,7 @@ export default function EventDetailPage({ params }: { params: { id: string } }) 
               </div>
             </ScrollReveal>
             <ScrollReveal delay={0.1}>
-              <Card className="bg-card/50 border-border mb-8">
+              <Card className="glass mb-8">
                 <CardContent className="p-6">
                   <h3 className="font-bold text-lg mb-4">Speaker</h3>
                   <div className="flex items-center gap-4">
