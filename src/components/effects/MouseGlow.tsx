@@ -24,7 +24,7 @@ export function MouseGlow() {
     let animationFrameId: number;
     const animate = () => {
       // Lerp logic: current = current + (target - current) * factor
-      const ease = 0.06; // lower value = slower, dreamier lag
+      const ease = 0.28; // highly responsive, tight and smooth lag
       currentPos.current.x += (targetPos.current.x - currentPos.current.x) * ease;
       currentPos.current.y += (targetPos.current.y - currentPos.current.y) * ease;
 

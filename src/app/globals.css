@@ -192,6 +192,9 @@
   .pulse-glow {
     animation: breatheGlow 4s ease-in-out infinite;
   }
+  .pulse-glow:hover {
+    animation: none !important;
+  }
 
   /* Gradient text */
   .gradient-text {
@@ -241,11 +244,11 @@
 @keyframes breatheGlow {
   0%, 100% {
     box-shadow: 0 0 12px hsl(var(--primary) / 0.15), 0 0 24px hsl(var(--primary) / 0.08);
-    transform: scale(1);
+    border-color: hsl(var(--primary) / 0.35);
   }
   50% {
-    box-shadow: 0 0 28px hsl(var(--primary) / 0.45), 0 0 56px hsl(var(--primary) / 0.25);
-    transform: scale(1.025);
+    box-shadow: 0 0 28px hsl(var(--primary) / 0.5), 0 0 56px hsl(var(--primary) / 0.3);
+    border-color: hsl(var(--primary) / 0.7);
   }
 }
 
