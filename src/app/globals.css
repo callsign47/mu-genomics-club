@@ -191,9 +191,11 @@
   /* Breathe animation for CTA */
   .pulse-glow {
     animation: breatheGlow 4s ease-in-out infinite;
+    transition: none !important;
   }
   .pulse-glow:hover {
     animation: none !important;
+    transition: all 0.3s ease !important;
   }
 
   /* Gradient text */
