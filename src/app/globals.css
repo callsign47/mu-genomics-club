@@ -149,9 +149,9 @@
   }
   .glass-card:hover {
     background: hsl(var(--card) / 0.5);
-    border-color: hsl(var(--primary) / 0.3);
+    border-color: hsl(var(--primary) / 0.4);
     transform: translateY(-4px);
-    box-shadow: 0 8px 32px hsl(var(--primary) / 0.08), inset 0 1px 0 hsl(var(--primary) / 0.1);
+    box-shadow: 0 12px 40px hsl(var(--primary) / 0.18), 0 0 20px hsl(var(--primary) / 0.1), inset 0 1px 0 hsl(var(--primary) / 0.2);
   }
 
   /* Nav link animated underline */
@@ -188,9 +188,9 @@
     box-shadow: 0 0 20px hsl(var(--primary) / 0.1);
   }
 
-  /* Pulse animation for CTA */
+  /* Breathe animation for CTA */
   .pulse-glow {
-    animation: pulseGlow 2s infinite;
+    animation: breatheGlow 4s ease-in-out infinite;
   }
 
   /* Gradient text */
@@ -238,12 +238,14 @@
 /* ============================
    KEYFRAMES
    ============================ */
-@keyframes pulseGlow {
+@keyframes breatheGlow {
   0%, 100% {
-    box-shadow: 0 0 10px hsl(var(--primary) / 0.2), 0 0 20px hsl(var(--primary) / 0.1);
+    box-shadow: 0 0 12px hsl(var(--primary) / 0.15), 0 0 24px hsl(var(--primary) / 0.08);
+    transform: scale(1);
   }
   50% {
-    box-shadow: 0 0 20px hsl(var(--primary) / 0.4), 0 0 40px hsl(var(--primary) / 0.2);
+    box-shadow: 0 0 28px hsl(var(--primary) / 0.45), 0 0 56px hsl(var(--primary) / 0.25);
+    transform: scale(1.025);
   }
 }
 
